@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -109,13 +110,42 @@ fun SelectionTop(bottom: SelectionBottom, flat: Boolean, topInset: Dp, modifier:
     }
 }
 
-/** La píldora de abajo durante la selección: las mismas medidas que la de pestañas. */
+/** Con más de esta cantidad de opciones, la píldora de abajo pasa a dos filas. */
+private const val ONE_ROW_MAX = 5
+private val SELECTION_ROW = 56.dp
+
+/** Alto de la píldora de abajo durante la selección (sin la barra del sistema), para el margen de las listas. */
+fun selectionBarHeight(count: Int, flat: Boolean): Dp = when {
+    count <= ONE_ROW_MAX -> if (flat) FlatNavBarHeight else 70.dp + 12.dp
+    flat -> SELECTION_ROW * 2 + 8.dp
+    else -> SELECTION_ROW * 2 + 12.dp + 12.dp
+}
+
+/**
+ * La píldora de abajo durante la selección: las mismas medidas que la de pestañas. Con muchas
+ * opciones van en dos filas (la de abajo centrada), así cada botón tiene lugar para su texto.
+ */
 @Composable
 fun SelectionActions(bottom: SelectionBottom, flat: Boolean, modifier: Modifier = Modifier) {
     val p = LocalGlass.current
-    val row: @Composable (Modifier) -> Unit = { rowModifier ->
-        Row(rowModifier, verticalAlignment = Alignment.CenterVertically) {
-            bottom.items.value.forEach { BarAction(it.icon, it.label, it.description, it.onClick, Modifier.weight(1f), it.enabled) }
+    val items = bottom.items.value
+    val twoRows = items.size > ONE_ROW_MAX
+    val rows = if (twoRows) items.chunked((items.size + 1) / 2) else listOf(items)
+    val perRow = rows.first().size
+    val content: @Composable (Modifier) -> Unit = { colModifier ->
+        Column(colModifier, verticalArrangement = Arrangement.Center) {
+            rows.forEach { row ->
+                Row(
+                    if (twoRows) Modifier.fillMaxWidth().height(SELECTION_ROW) else Modifier.fillMaxWidth().weight(1f),
+                    verticalAlignment = Alignment.CenterVertically,
+                ) {
+                    // Fila más corta: mismo ancho por botón que en la de arriba, centrada.
+                    val gap = (perRow - row.size) / 2f
+                    if (gap > 0f) Spacer(Modifier.weight(gap))
+                    row.forEach { BarAction(it.icon, it.label, it.description, it.onClick, Modifier.weight(1f), it.enabled, big = twoRows) }
+                    if (gap > 0f) Spacer(Modifier.weight(gap))
+                }
+            }
         }
     }
     if (flat) {
@@ -126,24 +156,25 @@ fun SelectionActions(bottom: SelectionBottom, flat: Boolean, modifier: Modifier 
                 .drawBehind { drawLine(p.outline, Offset(0f, 0f), Offset(size.width, 0f), strokeWidth = 1.dp.toPx()) }
                 .navigationBarsPadding(),
         ) {
-            row(Modifier.fillMaxWidth().height(FlatNavBarHeight))
+            content(Modifier.fillMaxWidth().height(selectionBarHeight(items.size, flat = true)).padding(vertical = if (twoRows) 4.dp else 0.dp))
         }
     } else {
         GlassSurface(
-            modifier.navigationBarsPadding().padding(horizontal = 16.dp, vertical = 12.dp).fillMaxWidth().height(70.dp),
-            shape = CircleShape,
+            modifier.navigationBarsPadding().padding(horizontal = 16.dp, vertical = 12.dp).fillMaxWidth()
+                .height(if (twoRows) SELECTION_ROW * 2 + 12.dp else 70.dp),
+            shape = if (twoRows) RoundedCornerShape(34.dp) else CircleShape,
             strong = true,
             tint = p.pillVeil(),
             frost = PILL_FROST,
         ) {
-            row(Modifier.fillMaxSize().padding(horizontal = 6.dp))
+            content(Modifier.fillMaxSize().padding(horizontal = 6.dp, vertical = if (twoRows) 6.dp else 0.dp))
         }
     }
 }
 
 /** Botón plano con ícono y texto. Apagado se ve tenue y no responde. */
 @Composable
-private fun BarAction(icon: ImageVector, label: String?, description: String, onClick: () -> Unit, modifier: Modifier = Modifier, enabled: Boolean = true) {
+private fun BarAction(icon: ImageVector, label: String?, description: String, onClick: () -> Unit, modifier: Modifier = Modifier, enabled: Boolean = true, big: Boolean = false) {
     val p = LocalGlass.current
     val color = if (enabled) p.content else p.contentSecondary.copy(alpha = 0.45f)
     Column(
@@ -158,15 +189,15 @@ private fun BarAction(icon: ImageVector, label: String?, description: String, on
         verticalArrangement = Arrangement.Center,
     ) {
         Icon(styled(icon), null, Modifier.size(22.dp), tint = color)
-        // Hasta 7 opciones a lo ancho: texto chico y sin "…", que se ajusta solo si no entra.
+        // Sin "…": el texto se achica solo si no entra.
         if (label != null) Text(
             label,
             color = color,
             maxLines = 1,
             textAlign = TextAlign.Center,
             softWrap = false,
-            style = androidx.compose.material3.LocalTextStyle.current.copy(fontSize = 10.sp),
-            autoSize = androidx.compose.foundation.text.TextAutoSize.StepBased(minFontSize = 8.sp, maxFontSize = 10.sp),
+            style = androidx.compose.material3.LocalTextStyle.current.copy(fontSize = if (big) 12.sp else 10.sp),
+            autoSize = androidx.compose.foundation.text.TextAutoSize.StepBased(minFontSize = 8.sp, maxFontSize = if (big) 12.sp else 10.sp),
         )
     }
 }

@@ -198,6 +198,9 @@ fun RecorderUi(animated: Boolean, flatNav: Boolean, external: Uri? = null, onExi
     var sheet by remember { mutableStateOf<SheetSpec?>(null) }
     var prompt by remember { mutableStateOf<PromptSpec?>(null) }
     var dialog by remember { mutableStateOf<DialogSpec?>(null) }
+    // Una ventana abierta desde otra (por ejemplo, un desplegable dentro de "Quitar ruido") va
+    // encima y al cerrarse vuelve a la de abajo, en vez de reemplazarla.
+    var subDialog by remember { mutableStateOf<DialogSpec?>(null) }
     var toast by remember { mutableStateOf<Pair<String, Long>?>(null) }
     var selectionBottom by remember { mutableStateOf<dev.liquidrecorder.ui.screens.SelectionBottom?>(null) }
     val reduced = LocalReducedMotion.current
@@ -236,7 +239,10 @@ fun RecorderUi(animated: Boolean, flatNav: Boolean, external: Uri? = null, onExi
 
     val insets = WindowInsets.safeDrawing.asPaddingValues()
     val dir = LocalLayoutDirection.current
-    val navBar = if (flatNav) FlatNavBarHeight else 70.dp + 12.dp
+    // Seleccionando, la píldora de opciones puede tener dos filas: la lista deja ese lugar abajo.
+    val selectionCount = selectionBottom?.items?.value?.size ?: 0
+    val navBar = if (selectionBottom != null) dev.liquidrecorder.ui.screens.selectionBarHeight(selectionCount, flatNav)
+        else if (flatNav) FlatNavBarHeight else 70.dp + 12.dp
     val navHeight = navBar + WindowInsets.navigationBars.asPaddingValues().calculateBottomPadding()
     val tabPadding = PaddingValues(
         top = insets.calculateTopPadding(),
@@ -255,7 +261,7 @@ fun RecorderUi(animated: Boolean, flatNav: Boolean, external: Uri? = null, onExi
     CompositionLocalProvider(
         LocalActionSheet provides { sheet = it },
         LocalPrompt provides { prompt = it },
-        LocalDialog provides { dialog = it },
+        LocalDialog provides { if (dialog != null) subDialog = it else dialog = it },
         LocalToast provides { toast = it to System.nanoTime() },
         dev.liquidrecorder.ui.screens.LocalSelectionBottom provides { selectionBottom = it },
     ) {
@@ -326,7 +332,8 @@ fun RecorderUi(animated: Boolean, flatNav: Boolean, external: Uri? = null, onExi
                 ToastHost(toast) { toast = null }
                 ActionSheetHost(sheet) { sheet = null }
                 PromptHost(prompt) { prompt = null }
-                DialogHost(dialog) { dialog = null }
+                DialogHost(dialog) { dialog = null; subDialog = null }
+                DialogHost(subDialog) { subDialog = null }
             },
         ) {
             val top = stack.lastOrNull()

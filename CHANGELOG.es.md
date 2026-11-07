@@ -1,5 +1,10 @@
 # Registro de cambios
 
+## Sin publicar
+
+- Selección múltiple: las opciones de abajo van en dos filas, con el texto más grande.
+- Quitar ruido de ambiente: cambiar la intensidad (o cualquier desplegable dentro de una ventana) cerraba toda la ventana. Ahora la lista se abre encima y vuelve a la ventana.
+
 ## 1.2.1
 
 - Íconos nuevos. El predeterminado (Liquid) tiene un fondo grafito, más sobrio, en vez del brillo celeste y rosa, y su detalle de color ahora es el mismo rojo en toda la suite. El de estilo Material es de un color pleno con el dibujo en blanco y más chico, sin el marco celeste.

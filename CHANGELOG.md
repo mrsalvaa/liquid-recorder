@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Multi-select: the options at the bottom go in two rows, with bigger text.
+- Remove background noise: changing the intensity (or any dropdown inside a window) closed the whole window. Now the list opens on top and goes back to the window.
+
 ## 1.2.1
 
 - New app icons. The default (Liquid) icon has a sober graphite background instead of the cyan and pink glow, and its accent is now the same red across the suite. The Material icon is a solid color with a smaller white drawing, without the light-blue frame.
