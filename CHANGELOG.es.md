@@ -5,7 +5,7 @@
 Primera versión.
 
 - Grabación en FLAC (predeterminado, sin pérdida), WAV de 16 o 24 bits, AAC (M4A) u Opus (OGG), a 44,1 o 48 kHz, mono o estéreo.
-- Captura en coma flotante, ganancia de -6 a +24 dB, micrófono a elegir (del teléfono, con cable, USB o Bluetooth) y procesamiento a elegir (estándar, sin procesar, voz o ambiente), con reducción de ruido opcional.
+- Captura en coma flotante, ganancia de -6 a +24 dB, micrófono a elegir (del teléfono, con cable, USB o Bluetooth) y procesamiento a elegir (estándar, sin procesar, voz o ambiente).
 - Mientras se graba: onda o espectrograma, medidor de nivel en dB con pico retenido y aviso de saturación, y aviso si otra app (una llamada) toma el micrófono.
 - Marcadores durante la grabación: al crearlos se abre una ventana para ponerles nombre sin pausar; se pueden renombrar o borrar mientras se sigue grabando.
 - Sigue grabando con la pantalla apagada; notificación con pausar, marcador y detener.

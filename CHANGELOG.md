@@ -5,7 +5,7 @@
 First release.
 
 - Records to FLAC (default, lossless), 16- or 24-bit WAV, AAC (M4A) or Opus (OGG), at 44.1 or 48 kHz, mono or stereo.
-- Floating-point capture, -6 to +24 dB gain, choice of microphone (phone, wired, USB or Bluetooth) and processing (standard, unprocessed, voice or ambience), with optional noise reduction.
+- Floating-point capture, -6 to +24 dB gain, choice of microphone (phone, wired, USB or Bluetooth) and processing (standard, unprocessed, voice or ambience).
 - While recording: waveform or spectrogram, dB level meter with peak hold and clipping warning, and a warning when another app (a call) takes the microphone.
 - Markers while recording: creating one opens a window to name it without pausing; they can be renamed or deleted while recording continues.
 - Keeps recording with the screen off; notification with pause, marker and stop.
