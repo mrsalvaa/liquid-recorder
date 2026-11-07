@@ -2,20 +2,21 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
-    android:width="108dp"
-    android:height="108dp"
-    android:viewportWidth="108"
-    android:viewportHeight="108">
-    <!-- Dentro de la zona segura: las máscaras redondas no le cortan las esquinas -->
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
     <group android:pivotX="54" android:pivotY="54" android:scaleX="0.9" android:scaleY="0.9">
-    <!-- Botón de grabar gris pizarra con el punto rojo en el centro, y un aro fino alrededor -->
-    <path android:pathData="M54,26a28,28 0,1 1,0,56a28,28 0,1 1,0,-56z" android:fillColor="#00000000" android:strokeColor="#FFD5D9E0" android:strokeWidth="2" />
-    <path android:pathData="M54,31a23,23 0,1 1,0,46a23,23 0,1 1,0,-46z">
-        <aapt:attr name="android:fillColor">
-            <gradient android:type="linear" android:startX="54" android:startY="31" android:endX="54" android:endY="77"
-                android:startColor="#FF4A505E" android:endColor="#FF2E323C" />
-        </aapt:attr>
-    </path>
-    <path android:pathData="M54,44a10,10 0,1 1,0,20a10,10 0,1 1,0,-20z" android:fillColor="#FFF43F5E" />
+    <!-- Barras de onda pizarra a los lados del micrófono -->
+    <path android:pathData="M27,49a2.5,2.5 0,0 1,2.5,2.5v5a2.5,2.5 0,0 1,-5,0v-5a2.5,2.5 0,0 1,2.5,-2.5z" android:fillColor="#FF3A3F4B" />
+    <path android:pathData="M34,44a2.5,2.5 0,0 1,2.5,2.5v15a2.5,2.5 0,0 1,-5,0v-15a2.5,2.5 0,0 1,2.5,-2.5z" android:fillColor="#FF3A3F4B" />
+    <path android:pathData="M74,44a2.5,2.5 0,0 1,2.5,2.5v15a2.5,2.5 0,0 1,-5,0v-15a2.5,2.5 0,0 1,2.5,-2.5z" android:fillColor="#FF3A3F4B" />
+    <path android:pathData="M81,49a2.5,2.5 0,0 1,2.5,2.5v5a2.5,2.5 0,0 1,-5,0v-5a2.5,2.5 0,0 1,2.5,-2.5z" android:fillColor="#FF3A3F4B" />
+    <group android:pivotX="54" android:pivotY="52" android:scaleX="0.82" android:scaleY="0.82">
+    <!-- Micrófono con degradé coral -->
+    <path android:pathData="M45,35a9,9 0,0 1,18,0v16a9,9 0,0 1,-18,0z"><aapt:attr name="android:fillColor">
+        <gradient android:type="linear" android:startX="54" android:startY="26" android:endX="54" android:endY="60"
+            android:startColor="#FFFF7A6B" android:endColor="#FFE8384F" /></aapt:attr></path>
+    <path android:pathData="M41,50a13,13 0,0 0,26,0" android:strokeColor="#FF3A3F4B" android:strokeWidth="3.5" android:strokeLineCap="round" android:fillColor="#00000000" />
+    <path android:pathData="M52.25,63h3.5v11h-3.5z" android:fillColor="#FF3A3F4B" />
+    <path android:pathData="M46,72h16a2.5,2.5 0,0 1,0,5h-16a2.5,2.5 0,0 1,0,-5z" android:fillColor="#FF3A3F4B" />
+    </group>
     </group>
 </vector>

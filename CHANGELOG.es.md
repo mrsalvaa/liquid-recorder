@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## 1.2.1
+
+- Íconos nuevos. El predeterminado (Liquid) tiene un fondo grafito, más sobrio, en vez del brillo celeste y rosa, y su detalle de color ahora es el mismo rojo en toda la suite. El de estilo Material es de un color pleno con el dibujo en blanco y más chico, sin el marco celeste.
+- Ícono nuevo de estilo Samsung.
+- Ajustes: "Color de énfasis" ahora es solo "Énfasis".
+
 ## 1.2.0
 
 Primera versión.

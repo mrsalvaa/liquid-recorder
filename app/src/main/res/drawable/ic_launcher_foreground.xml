@@ -27,5 +27,5 @@
     <path android:pathData="M45,74h18a2.5,2.5 0,0 1,0,5h-18a2.5,2.5 0,0 1,0,-5z" android:fillColor="#E6FFFFFF" />
     </group>
     <!-- Punto de grabación -->
-    <path android:pathData="M70,32a3.5,3.5 0,1 1,0,7a3.5,3.5 0,1 1,0,-7z" android:fillColor="#FFFF4D6D" />
+    <path android:pathData="M69,35.5a2.5,2.5 0,1 1,0,5a2.5,2.5 0,1 1,0,-5z" android:fillColor="#FFFF4D6D" />
 </vector>
