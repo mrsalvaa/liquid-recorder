@@ -78,6 +78,12 @@ Check the file wasn't altered:
 sha256sum -c liquid-recorder-v1.2.0.apk.sha256
 ```
 
+SHA-256 of `liquid-recorder-v1.2.0.apk`:
+
+```
+4c5ea410557da260b74ba5d888b3bce1d6ad9a55445f23a65842fed23904007a
+```
+
 And that it's signed with the project key (certificate SHA-256 fingerprint):
 
 ```

@@ -81,6 +81,12 @@ Comprueba que el archivo no fue alterado:
 sha256sum -c liquid-recorder-v1.2.0.apk.sha256
 ```
 
+SHA-256 de `liquid-recorder-v1.2.0.apk`:
+
+```
+4c5ea410557da260b74ba5d888b3bce1d6ad9a55445f23a65842fed23904007a
+```
+
 Y que está firmado con la clave del proyecto (huella SHA-256 del certificado):
 
 ```
