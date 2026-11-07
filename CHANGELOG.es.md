@@ -1,6 +1,6 @@
 # Registro de cambios
 
-## Sin publicar
+## 1.2.2
 
 - Selección múltiple: las opciones de abajo van en dos filas, con el texto más grande.
 - Quitar ruido de ambiente: cambiar la intensidad (o cualquier desplegable dentro de una ventana) cerraba toda la ventana. Ahora la lista se abre encima y vuelve a la ventana.

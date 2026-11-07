@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.2.2
 
 - Multi-select: the options at the bottom go in two rows, with bigger text.
 - Remove background noise: changing the intensity (or any dropdown inside a window) closed the whole window. Now the list opens on top and goes back to the window.
