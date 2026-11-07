@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<!-- Nombre distinto para no confundirla con la release instalada al lado. -->
+<resources>
+    <string name="app_name">Grabadora (prueba)</string>
+</resources>

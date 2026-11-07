@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Dentro de la zona segura: las máscaras redondas no le cortan las esquinas -->
+    <group android:pivotX="54" android:pivotY="54" android:scaleX="0.9" android:scaleY="0.9">
+    <!-- Botón de grabar gris pizarra con el punto rojo en el centro, y un aro fino alrededor -->
+    <path android:pathData="M54,26a28,28 0,1 1,0,56a28,28 0,1 1,0,-56z" android:fillColor="#00000000" android:strokeColor="#FFD5D9E0" android:strokeWidth="2" />
+    <path android:pathData="M54,31a23,23 0,1 1,0,46a23,23 0,1 1,0,-46z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="54" android:startY="31" android:endX="54" android:endY="77"
+                android:startColor="#FF4A505E" android:endColor="#FF2E323C" />
+        </aapt:attr>
+    </path>
+    <path android:pathData="M54,44a10,10 0,1 1,0,20a10,10 0,1 1,0,-20z" android:fillColor="#FFF43F5E" />
+    </group>
+</vector>

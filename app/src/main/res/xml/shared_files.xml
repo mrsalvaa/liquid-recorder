@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<!-- Solo se comparten las grabaciones y las copias exportadas temporales, con permiso por URI. -->
+<paths>
+    <files-path name="recordings" path="recordings/" />
+    <cache-path name="export" path="export/" />
+</paths>

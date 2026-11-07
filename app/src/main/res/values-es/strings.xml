@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<resources>
+    <string name="app_name">Grabadora</string>
+    <string name="open_with_label">Reproducir con Grabadora</string>
+    <string name="tab_record">Grabar</string>
+    <string name="tab_library">Grabaciones</string>
+    <string name="settings">Ajustes</string>
+    <string name="appearance">Apariencia</string>
+
+    <!-- Grabar -->
+    <string name="recording_base">Grabación</string>
+    <string name="ready">Lista para grabar</string>
+    <string name="record_hint">Toca el botón rojo para empezar. Todo queda en este teléfono.</string>
+    <string name="tile_record">Grabar</string>
+    <string name="tile_stop">Detener grabación</string>
+    <string name="pause">Pausar</string>
+    <string name="resume">Reanudar</string>
+    <string name="stop">Detener</string>
+    <string name="stop_save">Detener y guardar</string>
+    <string name="marker">Marcador</string>
+    <string name="add_marker">Agregar marcador</string>
+    <string name="saving">Guardando…</string>
+    <string name="notif_recording">Grabando</string>
+    <string name="notif_paused">En pausa</string>
+    <string name="channel_recording">Grabación en curso</string>
+    <string name="silenced">Otra app (una llamada, por ejemplo) está usando el micrófono: se graba silencio hasta que lo suelte.</string>
+    <string name="silenced_short">Micrófono ocupado</string>
+    <string name="free_space">Hay espacio para unas %s con estos ajustes</string>
+    <string name="hours_short">%d h</string>
+    <string name="minutes_short">%d min</string>
+    <string name="saved_title">Grabación guardada</string>
+    <string name="visual_wave">Onda</string>
+    <string name="visual_spectrum">Espectrograma</string>
+    <string name="visual_meter">Medidor de nivel</string>
+    <string name="clipping">SATURA</string>
+    <string name="mono">Mono</string>
+    <string name="stereo">Estéreo</string>
+    <string name="mic_permission_title">Permiso del micrófono</string>
+    <string name="mic_permission_text">La grabadora necesita el micrófono para grabar. Las grabaciones nunca salen del teléfono: la app no tiene permiso de internet. Puedes darlo en los ajustes de la app.</string>
+    <string name="open_settings">Abrir ajustes</string>
+
+    <!-- Marcadores -->
+    <string name="markers">Marcadores</string>
+    <string name="markers_hint">Toca el botón del marcador para señalar un momento. Le puedes poner nombre mientras sigues grabando.</string>
+    <string name="markers_player_hint">Agrega un marcador en la posición actual para volver ahí después.</string>
+    <string name="marker_n">Marcador %d</string>
+    <string name="delete_marker">Borrar %s</string>
+    <string name="add_marker_here">Agregar marcador aquí</string>
+    <string name="name_marker">Nombre del marcador</string>
+    <string name="rename_marker">Renombrar marcador</string>
+    <string name="rename_marker_named">Renombrar %s</string>
+    <string name="go_to_marker">Ir al marcador</string>
+    <string name="prev_marker">Marcador anterior</string>
+    <string name="next_marker">Marcador siguiente</string>
+    <string name="share_markers">Compartir marcadores</string>
+
+    <!-- Errores -->
+    <string name="error_no_space">No hay espacio libre suficiente para grabar.</string>
+    <string name="error_space_stopped">El teléfono se está quedando sin espacio: la grabación se detuvo y se guardó.</string>
+    <string name="error_mic">No se pudo abrir el micrófono. Puede que otra app lo esté usando.</string>
+    <string name="error_mic_lost">El micrófono dejó de responder: la grabación se guardó hasta ese momento.</string>
+    <string name="error_write">No se pudo escribir el archivo.</string>
+    <string name="error_no_audio">Ese archivo no tiene audio.</string>
+    <string name="error_job">Algo salió mal (%s).</string>
+    <string name="error_export">No se pudo crear el archivo.</string>
+    <string name="job_busy">Espera a que termine la tarea en curso.</string>
+    <string name="cancelled">Cancelado</string>
+    <string name="recovered_lost">Se recuperaron %1$d grabaciones cortadas y %2$d no se pudieron (AAC y Opus no se pueden rescatar).</string>
+
+    <!-- Biblioteca -->
+    <string name="search_hint">Buscar nombres, etiquetas y marcadores</string>
+    <string name="all">Todos</string>
+    <string name="starred">Favoritos</string>
+    <string name="star">Agregar a favoritos</string>
+    <string name="unstar">Quitar de favoritos</string>
+    <string name="folder">Carpeta</string>
+    <string name="new_folder">Carpeta nueva</string>
+    <string name="folder_name">Nombre de la carpeta</string>
+    <string name="rename_folder">Renombrar carpeta</string>
+    <string name="delete_folder">Borrar carpeta</string>
+    <string name="delete_folder_text">Sus grabaciones no se borran: quedan sin carpeta.</string>
+    <string name="no_folder">Sin carpeta</string>
+    <string name="current">Actual</string>
+    <string name="move_to_folder">Mover a carpeta</string>
+    <string name="create">Crear</string>
+    <string name="tags">Etiquetas</string>
+    <string name="tags_empty">Todavía no hay etiquetas. Escribe una abajo.</string>
+    <string name="new_tag">Etiqueta nueva</string>
+    <string name="add_tag">Agregar etiqueta</string>
+    <string name="rename_tag">Renombrar etiqueta</string>
+    <string name="delete_tag">Borrar etiqueta</string>
+    <string name="library_empty">Todavía no hay grabaciones</string>
+    <string name="library_empty_hint">Lo que grabes aparece aquí. También puedes abrir un audio o un video del teléfono.</string>
+    <string name="no_results">No se encontró nada</string>
+    <string name="no_results_hint">Prueba con otra palabra u otro filtro.</string>
+    <string name="options">Opciones</string>
+    <string name="options_for">Opciones de %s</string>
+    <string name="open_file">Abrir audio o video</string>
+    <string name="moved_to_trash">Se movió a la papelera</string>
+    <string name="rename">Renombrar</string>
+    <string name="name">Nombre</string>
+    <string name="save">Guardar</string>
+    <string name="done">Listo</string>
+    <string name="open">Abrir</string>
+    <string name="delete">Borrar</string>
+    <string name="share">Compartir</string>
+    <string name="play">Reproducir</string>
+
+    <!-- Exportar e importar -->
+    <string name="export_as">Exportar como…</string>
+    <string name="export_hint">Guarda una copia donde elijas (teléfono, tarjeta SD, USB). El original queda aquí.</string>
+    <string name="export_same">Mismo formato: copia exacta</string>
+    <string name="exporting">Exportando</string>
+    <string name="exported">Exportado</string>
+    <string name="importing">Guardando el audio</string>
+    <string name="imported">Guardado en grabaciones</string>
+    <string name="imported_from">De %s</string>
+    <string name="format_flac_hint">Sin pérdida, más o menos la mitad que un WAV. Se reproduce en casi todo.</string>
+    <string name="format_wav_hint">Sin pérdida ni compresión: el más compatible, pero los archivos son grandes.</string>
+    <string name="format_aac_hint">Muy buena calidad en archivos chicos, compatible con todo.</string>
+    <string name="format_opus_hint">La mejor calidad para su tamaño; algunas apps viejas no lo reproducen. Siempre a 48 kHz.</string>
+
+    <!-- Reproducir -->
+    <string name="external_file">Archivo del teléfono</string>
+    <string name="external_hint">Este archivo solo se está reproduciendo: no se copia a ningún lado. De los videos se reproduce solo el sonido.</string>
+    <string name="save_to_library">Guardar el audio en grabaciones</string>
+    <string name="play_error">Este archivo no se puede reproducir.</string>
+    <string name="back_seconds">Retroceder %d segundos</string>
+    <string name="forward_seconds">Avanzar %d segundos</string>
+    <string name="speed">Velocidad</string>
+    <string name="skip_silence">Saltear silencios</string>
+    <string name="close_player">Cerrar reproductor</string>
+
+    <!-- Editar -->
+    <string name="edit_hint">Arrastra sobre la onda para mover el borde más cercano de la selección. Toca para mover la posición.</string>
+    <string name="selection_range">Selección: %1$s – %2$s (%3$s)</string>
+    <string name="start_here">Empieza aquí</string>
+    <string name="end_here">Termina aquí</string>
+    <string name="play_selection">Escuchar selección</string>
+    <string name="trim_keep">Quedarse con la selección</string>
+    <string name="trim_keep_text">Se quita todo lo que está fuera de la selección. Los marcadores se mueven con el audio.</string>
+    <string name="delete_selection">Borrar la selección</string>
+    <string name="delete_selection_text">Se quita la parte seleccionada y se une el resto.</string>
+    <string name="split">Dividir</string>
+    <string name="split_here">Dividir en %s</string>
+    <string name="split_text">Se crean dos grabaciones, antes y después de la posición.</string>
+    <string name="save_copy">Guardar como copia</string>
+    <string name="replace_original">Reemplazar el original</string>
+    <string name="edit_quality_hint">FLAC y WAV se cortan sin perder calidad. AAC y Opus se vuelven a codificar, con una pérdida mínima.</string>
+    <string name="saving_edit">Guardando</string>
+    <string name="edit_saved">Guardado</string>
+    <string name="edited_title">%s (editada)</string>
+    <string name="part_title">%1$s (%2$d)</string>
+    <string name="splitting">Dividiendo</string>
+    <string name="split_done">Dividida en dos</string>
+
+    <!-- Papelera -->
+    <string name="trash">Papelera</string>
+    <string name="trash_hint">Las grabaciones se borran del todo a los %d días.</string>
+    <string name="trash_empty">La papelera está vacía</string>
+    <string name="trash_empty_hint">Lo que borres queda aquí un tiempo por si te arrepientes.</string>
+    <string name="trash_empty_short">Vacía</string>
+    <string name="empty_trash">Vaciar papelera</string>
+    <string name="restore">Restaurar</string>
+    <string name="delete_forever">Borrar para siempre</string>
+    <string name="delete_forever_text">«%s» se va a borrar y no se puede recuperar.</string>
+
+    <!-- Ajustes -->
+    <string name="section_recording">Grabación</string>
+    <string name="settings_next_recording">Los cambios se aplican a la próxima grabación.</string>
+    <string name="format">Formato</string>
+    <string name="quality">Calidad</string>
+    <string name="bits_hint">24 bits deja más margen para sonidos suaves y fuertes; 16 bits es calidad de CD y ocupa menos.</string>
+    <string name="sample_rate">Frecuencia de muestreo</string>
+    <string name="channels">Canales</string>
+    <string name="channels_hint">Estéreo usa dos micrófonos del teléfono: mejor para música y ambiente. Para voz alcanza con mono.</string>
+    <string name="size_estimate">Unos %s por minuto</string>
+    <string name="section_microphone">Micrófono</string>
+    <string name="microphone">Micrófono</string>
+    <string name="mic_auto">Automático</string>
+    <string name="mic_auto_hint">El que elija el teléfono (el de cable o USB si hay uno conectado)</string>
+    <string name="mic_builtin">Micrófono del teléfono</string>
+    <string name="mic_wired">Auriculares con cable</string>
+    <string name="mic_bluetooth">Bluetooth: %s</string>
+    <string name="mic_usb">USB: %s</string>
+    <string name="mic_disconnected">%s (no conectado)</string>
+    <string name="mic_bluetooth_hint">Los micrófonos Bluetooth graban con calidad de llamada (16 kHz). Para la mejor calidad, usa el del teléfono o uno USB.</string>
+    <string name="audio_source">Procesamiento</string>
+    <string name="source_standard">Estándar</string>
+    <string name="source_raw">Sin procesar</string>
+    <string name="source_voice">Voz</string>
+    <string name="source_camera">Ambiente</string>
+    <string name="source_standard_hint">Lo que hace el teléfono por defecto. Sirve para casi todo.</string>
+    <string name="source_raw_hint">El micrófono tal cual, sin ajustes automáticos: lo más fiel, ideal para música. Puede sonar más bajo.</string>
+    <string name="source_voice_hint">Pensado para voz, con poco procesamiento y sin volumen automático.</string>
+    <string name="source_camera_hint">El que usa la cámara para video: bueno para salas, recitales y estéreo.</string>
+    <string name="gain">Ganancia</string>
+    <string name="gain_hint">Sube o baja el volumen al grabar. Si el medidor se pone rojo o dice SATURA, bájala.</string>
+    <string name="section_while_recording">Mientras grabas</string>
+    <string name="keep_screen_on">Mantener la pantalla encendida</string>
+    <string name="keep_screen_on_hint">Solo mientras grabas con la app abierta. Con la pantalla apagada sigue grabando igual.</string>
+    <string name="quick_access_hint">Para empezar rápido, agrega el botón «Grabar» a los ajustes rápidos, el widget a la pantalla de inicio, o mantén pulsado el ícono de la app.</string>
+    <string name="section_playback">Reproducción</string>
+    <string name="skip_amount">Botones de retroceder y avanzar</string>
+    <string name="section_storage">Almacenamiento</string>
+    <string name="storage_used">Espacio</string>
+    <string name="storage_used_value">%1$s ocupan %2$s · quedan %3$s libres en el teléfono</string>
+    <string name="privacy_note">Las grabaciones quedan en la carpeta privada de la app y solo salen del teléfono si las compartes o exportas. Al desinstalar la app se borran.</string>
+    <string name="section_about">Acerca de</string>
+    <string name="about_version">Versión %s</string>
+    <string name="about_license">Software libre con licencia GPL-3.0-or-later. Sin permiso de internet ni rastreadores.</string>
+
+    <!-- Widget -->
+    <string name="widget_name">Grabar</string>
+    <string name="widget_description">Empieza a grabar desde la pantalla de inicio, y agrega marcadores o detén sin abrir la app.</string>
+    <string name="widget_tap_to_record">Toca para grabar</string>
+
+    <plurals name="markers_count">
+        <item quantity="one">%d marcador</item>
+        <item quantity="many">%d marcadores</item>
+        <item quantity="other">%d marcadores</item>
+    </plurals>
+    <plurals name="recordings_count">
+        <item quantity="one">%d grabación</item>
+        <item quantity="many">%d grabaciones</item>
+        <item quantity="other">%d grabaciones</item>
+    </plurals>
+    <plurals name="days_left">
+        <item quantity="one">Se borra en %d día</item>
+        <item quantity="many">Se borra en %d días</item>
+        <item quantity="other">Se borra en %d días</item>
+    </plurals>
+    <plurals name="empty_trash_text">
+        <item quantity="one">Se va a borrar %d grabación y no se puede recuperar.</item>
+        <item quantity="many">Se van a borrar %d grabaciones y no se pueden recuperar.</item>
+        <item quantity="other">Se van a borrar %d grabaciones y no se pueden recuperar.</item>
+    </plurals>
+    <plurals name="recovered">
+        <item quantity="one">Se recuperó %d grabación cortada</item>
+        <item quantity="many">Se recuperaron %d grabaciones cortadas</item>
+        <item quantity="other">Se recuperaron %d grabaciones cortadas</item>
+    </plurals>
+
+    <!-- Ruido, selección múltiple y edición -->
+    <string name="discard">Descartar</string>
+    <string name="discarded">Descartada: queda en la papelera 30 días</string>
+    <string name="noise_off">Desactivado</string>
+    <string name="noise_soft">Suave</string>
+    <string name="noise_medium">Media</string>
+    <string name="noise_strong">Fuerte</string>
+    <string name="edit_replace_hint">Recortar y borrar reemplazan la grabación; el original va a la papelera durante 30 días.</string>
+    <string name="select">Seleccionar</string>
+    <string name="selection_exit">Salir de la selección</string>
+    <string name="select_all">Seleccionar todo</string>
+    <string name="bar_favorite">Favorito</string>
+    <string name="bar_move">Mover</string>
+    <string name="bar_tags">Etiquetas</string>
+    <string name="bar_export">Exportar</string>
+    <string name="export_many_hint">Después elige una carpeta: ahí se guarda una copia de cada una.</string>
+    <plurals name="exported_count">
+        <item quantity="one">Se exportó %d grabación</item>
+        <item quantity="many">Se exportaron %d grabaciones</item>
+        <item quantity="other">Se exportaron %d grabaciones</item>
+    </plurals>
+    <plurals name="moved_to_trash_count">
+        <item quantity="one">Se movió %d grabación a la papelera</item>
+        <item quantity="many">Se movieron %d grabaciones a la papelera</item>
+        <item quantity="other">Se movieron %d grabaciones a la papelera</item>
+    </plurals>
+    <plurals name="selected_count">
+        <item quantity="one">%d seleccionada</item>
+        <item quantity="many">%d seleccionadas</item>
+        <item quantity="other">%d seleccionadas</item>
+    </plurals>
+
+    <!-- Limpieza de ruido -->
+    <string name="edit_audio">Editar</string>
+    <string name="clean_title">Quitar ruido de ambiente</string>
+    <string name="clean_hint">Crea una copia limpia; el original no se toca. Solo procesamiento de señal clásico, todo en este teléfono.</string>
+    <string name="clean_level">Intensidad</string>
+    <string name="clean_extra">Pulido extra</string>
+    <string name="clean_extra_hint">Una segunda pasada más fina (medias no locales). Mejor, pero varias veces más lenta.</string>
+    <string name="clean_normalize">Igualar el volumen</string>
+    <string name="clean_normalize_hint">Lo lleva a −16 LUFS (EBU R128) sin saturar.</string>
+    <string name="clean_action">Limpiar</string>
+    <string name="clean_card_hint">Quita el ruido de fondo constante y el retumbe, e iguala el volumen, en una copia nueva.</string>
+    <string name="clean_open">Limpiar esta grabación</string>
+    <string name="cleaning_one">Limpiando «%s»</string>
+    <string name="cleaning_many">Limpiando %d grabaciones</string>
+    <string name="cleaned">Copia limpia guardada</string>
+    <string name="cleaned_title">%s (limpia)</string>
+    <string name="bar_clean">Limpiar</string>
+    <string name="channel_tasks">Tareas largas</string>
+    <string name="remaining_seconds">faltan unos segundos</string>
+    <string name="remaining_minutes">faltan unos %d min</string>
+    <string name="remaining_hours">faltan unas %1$d h %2$d min</string>
+    <string name="noise_soft_hint">Unos 10 dB menos de ruido: lo más natural</string>
+    <string name="noise_medium_hint">Unos 16 dB menos de ruido: para la mayoría de los lugares</string>
+    <string name="noise_strong_hint">Unos 24 dB menos de ruido: lugares muy ruidosos</string>
+    <plurals name="cleaned_count">
+        <item quantity="one">Se guardó %d copia limpia</item>
+        <item quantity="many">Se guardaron %d copias limpias</item>
+        <item quantity="other">Se guardaron %d copias limpias</item>
+    </plurals>
+    <string name="marker_at">Marcador en %s</string>
+</resources>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<resources>
+    <string name="app_name">Recorder</string>
+    <string name="open_with_label">Play with Recorder</string>
+    <string name="tab_record">Record</string>
+    <string name="tab_library">Recordings</string>
+    <string name="settings">Settings</string>
+    <string name="appearance">Appearance</string>
+
+    <!-- Grabar -->
+    <string name="recording_base">Recording</string>
+    <string name="ready">Ready to record</string>
+    <string name="record_hint">Tap the red button to start. Everything stays on this phone.</string>
+    <string name="tile_record">Record</string>
+    <string name="tile_stop">Stop recording</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="stop">Stop</string>
+    <string name="stop_save">Stop and save</string>
+    <string name="marker">Marker</string>
+    <string name="add_marker">Add marker</string>
+    <string name="saving">Saving…</string>
+    <string name="notif_recording">Recording</string>
+    <string name="notif_paused">Paused</string>
+    <string name="channel_recording">Recording in progress</string>
+    <string name="silenced">Another app (a call, for example) is using the microphone: silence is being recorded until it lets go.</string>
+    <string name="silenced_short">Microphone busy</string>
+    <string name="free_space">Free space for about %s with these settings</string>
+    <string name="hours_short">%d h</string>
+    <string name="minutes_short">%d min</string>
+    <string name="saved_title">Recording saved</string>
+    <string name="visual_wave">Waveform</string>
+    <string name="visual_spectrum">Spectrogram</string>
+    <string name="visual_meter">Level meter</string>
+    <string name="clipping">CLIP</string>
+    <string name="mono">Mono</string>
+    <string name="stereo">Stereo</string>
+    <string name="mic_permission_title">Microphone permission</string>
+    <string name="mic_permission_text">Recorder needs the microphone to record. Recordings never leave the phone: the app has no internet permission. You can allow it in the app settings.</string>
+    <string name="open_settings">Open settings</string>
+
+    <!-- Marcadores -->
+    <string name="markers">Markers</string>
+    <string name="markers_hint">Tap the bookmark button to mark a moment. You can name it while you keep recording.</string>
+    <string name="markers_player_hint">Add a marker at the current position to jump back to it later.</string>
+    <string name="marker_n">Marker %d</string>
+    <string name="delete_marker">Delete %s</string>
+    <string name="add_marker_here">Add marker here</string>
+    <string name="name_marker">Name the marker</string>
+    <string name="rename_marker">Rename marker</string>
+    <string name="rename_marker_named">Rename %s</string>
+    <string name="go_to_marker">Go to marker</string>
+    <string name="prev_marker">Previous marker</string>
+    <string name="next_marker">Next marker</string>
+    <string name="share_markers">Share markers</string>
+
+    <!-- Errores -->
+    <string name="error_no_space">Not enough free space to record.</string>
+    <string name="error_space_stopped">The phone is almost out of space: the recording was stopped and saved.</string>
+    <string name="error_mic">The microphone couldn\'t be opened. Another app may be using it.</string>
+    <string name="error_mic_lost">The microphone stopped responding: the recording was saved up to that point.</string>
+    <string name="error_write">The file couldn\'t be written.</string>
+    <string name="error_no_audio">That file has no audio.</string>
+    <string name="error_job">Something went wrong (%s).</string>
+    <string name="error_export">The file couldn\'t be created.</string>
+    <string name="job_busy">Wait for the current task to finish.</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="recovered_lost">%1$d interrupted recordings were recovered and %2$d couldn\'t be (AAC and Opus can\'t be recovered).</string>
+
+    <!-- Biblioteca -->
+    <string name="search_hint">Search names, tags and markers</string>
+    <string name="all">All</string>
+    <string name="starred">Favorites</string>
+    <string name="star">Add to favorites</string>
+    <string name="unstar">Remove from favorites</string>
+    <string name="folder">Folder</string>
+    <string name="new_folder">New folder</string>
+    <string name="folder_name">Folder name</string>
+    <string name="rename_folder">Rename folder</string>
+    <string name="delete_folder">Delete folder</string>
+    <string name="delete_folder_text">Its recordings aren\'t deleted: they stay without a folder.</string>
+    <string name="no_folder">No folder</string>
+    <string name="current">Current</string>
+    <string name="move_to_folder">Move to folder</string>
+    <string name="create">Create</string>
+    <string name="tags">Tags</string>
+    <string name="tags_empty">No tags yet. Write one below.</string>
+    <string name="new_tag">New tag</string>
+    <string name="add_tag">Add tag</string>
+    <string name="rename_tag">Rename tag</string>
+    <string name="delete_tag">Delete tag</string>
+    <string name="library_empty">No recordings yet</string>
+    <string name="library_empty_hint">What you record shows up here. You can also open an audio or video file from the phone.</string>
+    <string name="no_results">Nothing found</string>
+    <string name="no_results_hint">Try another word or filter.</string>
+    <string name="options">Options</string>
+    <string name="options_for">Options for %s</string>
+    <string name="open_file">Open audio or video file</string>
+    <string name="moved_to_trash">Moved to the trash</string>
+    <string name="rename">Rename</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+    <string name="done">Done</string>
+    <string name="open">Open</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+    <string name="play">Play</string>
+
+    <!-- Exportar e importar -->
+    <string name="export_as">Export as…</string>
+    <string name="export_hint">Saves a copy wherever you choose (phone, SD card, USB). The original stays here.</string>
+    <string name="export_same">Same format: exact copy</string>
+    <string name="exporting">Exporting</string>
+    <string name="exported">Exported</string>
+    <string name="importing">Saving audio</string>
+    <string name="imported">Saved to recordings</string>
+    <string name="imported_from">From %s</string>
+    <string name="format_flac_hint">Lossless, about half the size of WAV. Plays almost everywhere.</string>
+    <string name="format_wav_hint">Lossless and uncompressed: the most compatible, but large files.</string>
+    <string name="format_aac_hint">Very good quality in small files, compatible with everything.</string>
+    <string name="format_opus_hint">The best quality for its size; some older apps can\'t play it. Always 48 kHz.</string>
+
+    <!-- Reproducir -->
+    <string name="external_file">File from the phone</string>
+    <string name="external_hint">This file is only being played: it isn\'t copied anywhere. From videos, only the sound is played.</string>
+    <string name="save_to_library">Save audio to recordings</string>
+    <string name="play_error">This file can\'t be played.</string>
+    <string name="back_seconds">Back %d seconds</string>
+    <string name="forward_seconds">Forward %d seconds</string>
+    <string name="speed">Speed</string>
+    <string name="skip_silence">Skip silences</string>
+    <string name="close_player">Close player</string>
+
+    <!-- Editar -->
+    <string name="edit_hint">Drag on the waveform to move the nearest edge of the selection. Tap to move the position.</string>
+    <string name="selection_range">Selection: %1$s – %2$s (%3$s)</string>
+    <string name="start_here">Start here</string>
+    <string name="end_here">End here</string>
+    <string name="play_selection">Play selection</string>
+    <string name="trim_keep">Keep selection</string>
+    <string name="trim_keep_text">Everything outside the selection is removed. Markers move with the audio.</string>
+    <string name="delete_selection">Delete selection</string>
+    <string name="delete_selection_text">The selected part is removed and the rest is joined.</string>
+    <string name="split">Split</string>
+    <string name="split_here">Split at %s</string>
+    <string name="split_text">Two recordings are created, before and after the position.</string>
+    <string name="save_copy">Save as a copy</string>
+    <string name="replace_original">Replace the original</string>
+    <string name="edit_quality_hint">FLAC and WAV are cut without losing quality. AAC and Opus are re-encoded, with a tiny loss.</string>
+    <string name="saving_edit">Saving</string>
+    <string name="edit_saved">Saved</string>
+    <string name="edited_title">%s (edited)</string>
+    <string name="part_title">%1$s (%2$d)</string>
+    <string name="splitting">Splitting</string>
+    <string name="split_done">Split in two</string>
+
+    <!-- Papelera -->
+    <string name="trash">Trash</string>
+    <string name="trash_hint">Recordings are deleted for good after %d days.</string>
+    <string name="trash_empty">The trash is empty</string>
+    <string name="trash_empty_hint">Deleted recordings stay here for a while in case you change your mind.</string>
+    <string name="trash_empty_short">Empty</string>
+    <string name="empty_trash">Empty trash</string>
+    <string name="restore">Restore</string>
+    <string name="delete_forever">Delete forever</string>
+    <string name="delete_forever_text">“%s” will be deleted and can\'t be recovered.</string>
+
+    <!-- Ajustes -->
+    <string name="section_recording">Recording</string>
+    <string name="settings_next_recording">Changes apply to the next recording.</string>
+    <string name="format">Format</string>
+    <string name="quality">Quality</string>
+    <string name="bits_hint">24 bits leaves more room for quiet and loud sounds; 16 bits is CD quality and takes less space.</string>
+    <string name="sample_rate">Sample rate</string>
+    <string name="channels">Channels</string>
+    <string name="channels_hint">Stereo uses two of the phone\'s microphones: better for music and ambience. For voice, mono is enough.</string>
+    <string name="size_estimate">About %s per minute</string>
+    <string name="section_microphone">Microphone</string>
+    <string name="microphone">Microphone</string>
+    <string name="mic_auto">Automatic</string>
+    <string name="mic_auto_hint">The one the phone chooses (wired or USB if connected)</string>
+    <string name="mic_builtin">Phone microphone</string>
+    <string name="mic_wired">Wired headset</string>
+    <string name="mic_bluetooth">Bluetooth: %s</string>
+    <string name="mic_usb">USB: %s</string>
+    <string name="mic_disconnected">%s (not connected)</string>
+    <string name="mic_bluetooth_hint">Bluetooth microphones record at phone-call quality (16 kHz). For the best quality, use the phone\'s microphone or a USB one.</string>
+    <string name="audio_source">Processing</string>
+    <string name="source_standard">Standard</string>
+    <string name="source_raw">Unprocessed</string>
+    <string name="source_voice">Voice</string>
+    <string name="source_camera">Ambience</string>
+    <string name="source_standard_hint">What the phone does by default. Good for most uses.</string>
+    <string name="source_raw_hint">The microphone as is, without automatic adjustments: the most faithful, ideal for music. It may sound quieter.</string>
+    <string name="source_voice_hint">Tuned for speech, with little processing and no automatic volume.</string>
+    <string name="source_camera_hint">The one the camera uses for video: good for rooms, concerts and stereo.</string>
+    <string name="gain">Gain</string>
+    <string name="gain_hint">Raises or lowers the volume while recording. If the meter turns red or shows CLIP, lower it.</string>
+    <string name="section_while_recording">While recording</string>
+    <string name="keep_screen_on">Keep the screen on</string>
+    <string name="keep_screen_on_hint">Only while recording with the app open. With the screen off it keeps recording anyway.</string>
+    <string name="quick_access_hint">To start quickly, add the “Record” tile to quick settings, the widget to the home screen, or long-press the app icon.</string>
+    <string name="section_playback">Playback</string>
+    <string name="skip_amount">Back and forward buttons</string>
+    <string name="section_storage">Storage</string>
+    <string name="storage_used">Space</string>
+    <string name="storage_used_value">%1$s use %2$s · %3$s free on the phone</string>
+    <string name="privacy_note">Recordings stay in the app\'s private folder and never leave the phone unless you share or export them. Uninstalling the app deletes them.</string>
+    <string name="section_about">About</string>
+    <string name="about_version">Version %s</string>
+    <string name="about_license">Free software under GPL-3.0-or-later. No internet permission, no trackers.</string>
+
+    <!-- Widget -->
+    <string name="widget_name">Record</string>
+    <string name="widget_description">Start recording from the home screen, and add markers or stop without opening the app.</string>
+    <string name="widget_tap_to_record">Tap to record</string>
+
+    <plurals name="markers_count">
+        <item quantity="one">%d marker</item>
+        <item quantity="other">%d markers</item>
+    </plurals>
+    <plurals name="recordings_count">
+        <item quantity="one">%d recording</item>
+        <item quantity="other">%d recordings</item>
+    </plurals>
+    <plurals name="days_left">
+        <item quantity="one">Deleted in %d day</item>
+        <item quantity="other">Deleted in %d days</item>
+    </plurals>
+    <plurals name="empty_trash_text">
+        <item quantity="one">%d recording will be deleted and can\'t be recovered.</item>
+        <item quantity="other">%d recordings will be deleted and can\'t be recovered.</item>
+    </plurals>
+    <plurals name="recovered">
+        <item quantity="one">%d interrupted recording was recovered</item>
+        <item quantity="other">%d interrupted recordings were recovered</item>
+    </plurals>
+
+    <!-- Ruido, selección múltiple y edición -->
+    <string name="discard">Discard</string>
+    <string name="discarded">Discarded: it\'s in the trash for 30 days</string>
+    <string name="noise_off">Off</string>
+    <string name="noise_soft">Soft</string>
+    <string name="noise_medium">Medium</string>
+    <string name="noise_strong">Strong</string>
+    <string name="edit_replace_hint">Trimming and deleting replace the recording; the original goes to the trash for 30 days.</string>
+    <string name="select">Select</string>
+    <string name="selection_exit">Exit selection</string>
+    <string name="select_all">Select all</string>
+    <string name="bar_favorite">Favorite</string>
+    <string name="bar_move">Move</string>
+    <string name="bar_tags">Tags</string>
+    <string name="bar_export">Export</string>
+    <string name="export_many_hint">Then choose a folder: a copy of each one is saved there.</string>
+    <plurals name="exported_count">
+        <item quantity="one">%d recording exported</item>
+        <item quantity="other">%d recordings exported</item>
+    </plurals>
+    <plurals name="moved_to_trash_count">
+        <item quantity="one">%d recording moved to the trash</item>
+        <item quantity="other">%d recordings moved to the trash</item>
+    </plurals>
+    <plurals name="selected_count">
+        <item quantity="one">%d selected</item>
+        <item quantity="other">%d selected</item>
+    </plurals>
+
+    <!-- Limpieza de ruido -->
+    <string name="edit_audio">Edit</string>
+    <string name="clean_title">Remove background noise</string>
+    <string name="clean_hint">Makes a clean copy; the original isn\'t touched. Only classic signal processing, all on this phone.</string>
+    <string name="clean_level">Strength</string>
+    <string name="clean_extra">Extra polish</string>
+    <string name="clean_extra_hint">A second, finer pass (non-local means). Better, but several times slower.</string>
+    <string name="clean_normalize">Even out the volume</string>
+    <string name="clean_normalize_hint">Brings it to −16 LUFS (EBU R128) without clipping.</string>
+    <string name="clean_action">Clean</string>
+    <string name="clean_card_hint">Removes steady background noise and rumble and evens out the volume, in a new copy.</string>
+    <string name="clean_open">Clean this recording</string>
+    <string name="cleaning_one">Cleaning “%s”</string>
+    <string name="cleaning_many">Cleaning %d recordings</string>
+    <string name="cleaned">Clean copy saved</string>
+    <string name="cleaned_title">%s (clean)</string>
+    <string name="bar_clean">Clean</string>
+    <string name="channel_tasks">Long tasks</string>
+    <string name="remaining_seconds">a few seconds left</string>
+    <string name="remaining_minutes">about %d min left</string>
+    <string name="remaining_hours">about %1$d h %2$d min left</string>
+    <string name="noise_soft_hint">About 10 dB less noise: the most natural</string>
+    <string name="noise_medium_hint">About 16 dB less noise: for most places</string>
+    <string name="noise_strong_hint">About 24 dB less noise: very noisy places</string>
+    <plurals name="cleaned_count">
+        <item quantity="one">%d clean copy saved</item>
+        <item quantity="other">%d clean copies saved</item>
+    </plurals>
+    <string name="marker_at">Marker at %s</string>
+</resources>

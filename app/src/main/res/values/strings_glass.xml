@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<!-- Textos de ui/glass y de la tarjeta de Apariencia, copiados de Liquid Calendar sin cambios. -->
+<resources>
+    <string name="animated_background">Animated background</string>
+    <string name="animated_background_hint">Turn it off to save battery</string>
+    <string name="animated_background_reduced">Your device asks for fewer animations, so the background stays still.</string>
+    <string name="app_icon">App icon</string>
+    <string name="app_icon_hint">The launcher may take a few seconds to show the new icon, and you might have to add it to the home screen again.</string>
+    <string name="back">Back</string>
+    <string name="background">Background</string>
+    <string name="background_accent">Accent color</string>
+    <string name="background_moving">Moving</string>
+    <string name="background_plain">Plain</string>
+    <string name="background_plain_hint">Plain background with the theme\'s blue: lighter in dark mode, deeper in light mode.</string>
+    <string name="cancel">Cancel</string>
+    <string name="colors_aurora">Aurora</string>
+    <string name="colors_ocean">Ocean</string>
+    <string name="colors_sky_pink">Sky and pink</string>
+    <string name="colors_sunset">Sunset</string>
+    <string name="hue_blue">Blue</string>
+    <string name="hue_gray">Gray</string>
+    <string name="hue_green">Green</string>
+    <string name="hue_mint">Mint</string>
+    <string name="hue_orange">Orange</string>
+    <string name="hue_pink">Pink</string>
+    <string name="hue_red">Red</string>
+    <string name="hue_sky">Sky blue</string>
+    <string name="hue_violet">Violet</string>
+    <string name="hue_yellow">Yellow</string>
+    <string name="theme">Theme</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_system">System</string>
+    <string name="tone">Shade</string>
+    <string name="tone_dark">Dark</string>
+    <string name="tone_light">Light</string>
+    <string name="tone_medium">Medium</string>
+    <string name="ui_style">Interface style</string>
+    <string name="ui_style_liquid">Liquid Glass</string>
+    <string name="ui_style_solid">Solid</string>
+    <string name="ui_style_solid_hint">Opaque cards on a plain background, no glass effects.</string>
+</resources>

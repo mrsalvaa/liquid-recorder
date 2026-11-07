@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<!-- Textos de ui/glass y de la tarjeta de Apariencia, de Liquid Calendar; en español neutro (sin voseo). -->
+<resources>
+    <string name="animated_background">Fondo animado</string>
+    <string name="animated_background_hint">Desactívalo para ahorrar batería</string>
+    <string name="animated_background_reduced">Tu dispositivo pide menos animaciones, así que el fondo queda quieto.</string>
+    <string name="app_icon">Ícono de la app</string>
+    <string name="app_icon_hint">El launcher puede tardar unos segundos en mostrar el ícono nuevo, y puede que tengas que volver a ponerlo en la pantalla de inicio.</string>
+    <string name="back">Volver</string>
+    <string name="background">Fondo</string>
+    <string name="background_accent">Color de énfasis</string>
+    <string name="background_moving">En movimiento</string>
+    <string name="background_plain">Liso</string>
+    <string name="background_plain_hint">Fondo liso con el azul del tema: más claro en oscuro, más intenso en claro.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="colors_aurora">Aurora</string>
+    <string name="colors_ocean">Océano</string>
+    <string name="colors_sky_pink">Celeste y rosa</string>
+    <string name="colors_sunset">Atardecer</string>
+    <string name="hue_blue">Azul</string>
+    <string name="hue_gray">Gris</string>
+    <string name="hue_green">Verde</string>
+    <string name="hue_mint">Menta</string>
+    <string name="hue_orange">Naranja</string>
+    <string name="hue_pink">Rosa</string>
+    <string name="hue_red">Rojo</string>
+    <string name="hue_sky">Celeste</string>
+    <string name="hue_violet">Violeta</string>
+    <string name="hue_yellow">Amarillo</string>
+    <string name="theme">Tema</string>
+    <string name="theme_dark">Oscuro</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_system">Sistema</string>
+    <string name="tone">Tono</string>
+    <string name="tone_dark">Oscuro</string>
+    <string name="tone_light">Claro</string>
+    <string name="tone_medium">Medio</string>
+    <string name="ui_style">Estilo de interfaz</string>
+    <string name="ui_style_liquid">Liquid Glass</string>
+    <string name="ui_style_solid">Sólido</string>
+    <string name="ui_style_solid_hint">Tarjetas opacas sobre fondo liso, sin efectos de cristal.</string>
+</resources>

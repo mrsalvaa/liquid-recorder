@@ -1,0 +1,33 @@
+# Build
+.gradle/
+.kotlin/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+dist/
+*.apk
+*.aab
+*.idsig
+*.apk.sha256
+
+# IDE y sistema
+local.properties
+.idea/
+*.iml
+.DS_Store
+
+# Claves de firma
+*.keystore
+*.jks
+*.p12
+signing.properties
+.android-keys/
+
+# Secretos y datos locales: nunca al repo
+.env
+.env.*
+*.local.properties
+secrets/
+*.log
+hs_err_pid*
