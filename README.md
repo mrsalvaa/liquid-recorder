@@ -75,13 +75,13 @@ Get the APK from [Releases](../../releases) and install it (Android 12 or later)
 Check the file wasn't altered:
 
 ```bash
-sha256sum -c liquid-recorder-v1.2.2.apk.sha256
+sha256sum -c liquid-recorder-v1.2.3.apk.sha256
 ```
 
-SHA-256 of `liquid-recorder-v1.2.2.apk`:
+SHA-256 of `liquid-recorder-v1.2.3.apk`:
 
 ```
-2f0843478b58fc39764ee951cd1bc21bf6d426f693013056a1396b547a2b6845
+26254e9b907fb7005a1b2ed34284d0dd2d249a715633a73a5855eda068aaf659
 ```
 
 And that it's signed with the project key (certificate SHA-256 fingerprint):
@@ -91,7 +91,7 @@ And that it's signed with the project key (certificate SHA-256 fingerprint):
 ```
 
 ```bash
-apksigner verify --print-certs liquid-recorder-v1.2.2.apk
+apksigner verify --print-certs liquid-recorder-v1.2.3.apk
 ```
 
 ## Build

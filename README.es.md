@@ -78,13 +78,13 @@ Baja el APK de [Releases](../../releases) e instálalo (Android 12 o posterior).
 Comprueba que el archivo no fue alterado:
 
 ```bash
-sha256sum -c liquid-recorder-v1.2.2.apk.sha256
+sha256sum -c liquid-recorder-v1.2.3.apk.sha256
 ```
 
-SHA-256 de `liquid-recorder-v1.2.2.apk`:
+SHA-256 de `liquid-recorder-v1.2.3.apk`:
 
 ```
-2f0843478b58fc39764ee951cd1bc21bf6d426f693013056a1396b547a2b6845
+26254e9b907fb7005a1b2ed34284d0dd2d249a715633a73a5855eda068aaf659
 ```
 
 Y que está firmado con la clave del proyecto (huella SHA-256 del certificado):
@@ -94,7 +94,7 @@ Y que está firmado con la clave del proyecto (huella SHA-256 del certificado):
 ```
 
 ```bash
-apksigner verify --print-certs liquid-recorder-v1.2.2.apk
+apksigner verify --print-certs liquid-recorder-v1.2.3.apk
 ```
 
 ## Compilar
