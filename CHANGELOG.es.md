@@ -1,5 +1,9 @@
 # Registro de cambios
 
+## 1.2.3
+
+- Las notificaciones muestran como imagen el ícono de la app que elegiste en Ajustes (el ícono chico que agrega el sistema es fijo y no puede seguir la elección).
+
 ## 1.2.2
 
 - Selección múltiple: las opciones de abajo van en dos filas, con el texto más grande.

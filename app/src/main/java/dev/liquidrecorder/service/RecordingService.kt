@@ -114,6 +114,7 @@ class RecordingService : Service() {
         }.joinToString(" · ")
         return Notification.Builder(this, CHANNEL)
             .setSmallIcon(R.drawable.ic_notification)
+            .setLargeIcon(dev.liquidrecorder.util.AppIcons.large(this))
             .setContentTitle(s.title.ifEmpty { getString(R.string.notif_recording) })
             .setContentText(text)
             .setContentIntent(open)

@@ -88,6 +88,7 @@ class JobService : Service() {
         }.joinToString(" · ")
         return Notification.Builder(this, CHANNEL)
             .setSmallIcon(R.drawable.ic_notification)
+            .setLargeIcon(dev.liquidrecorder.util.AppIcons.large(this))
             .setContentTitle(job.label)
             .setContentText(text)
             .setProgress(100, percent, job.progress < 0.01f)

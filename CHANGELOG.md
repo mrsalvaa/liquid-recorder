@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.3
+
+- Notifications show the app icon you picked in Settings as their picture (the small app icon the system adds is fixed and can't follow the choice).
+
 ## 1.2.2
 
 - Multi-select: the options at the bottom go in two rows, with bigger text.
